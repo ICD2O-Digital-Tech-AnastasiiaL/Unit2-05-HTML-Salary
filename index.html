@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Anastasiia Lebedenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Salary Program, with a JS file</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script src="./js/script.js"></script>
+    <h1>Salary Program, with a JS file</h1>
+    <p>
+      <h3>Please enter your pay structure information :</h3>
+      <form action="javascript:hoursWorked()">
+        <label for="shoursworked">Number of Hours Worked:</label>
+        <input type="number" id="hours-worked" placeholder="Hours ..."><br><br>
+        <label for="srate">Hourly Rate: $</label>
+        <input type="number" id="hourly-rate" placeholder="Rate ..."><br><br>
+        <input type="submit" value="Enter">
+      </form>
+      <!-- Create a space where the user information will be displayed -->
+    <div id="gross-pay"></div>
+    <div id="gov-take"></div>
+    <div id="net-pay"></div>
+    </p>
+		
   </body>
 </html>
